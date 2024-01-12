@@ -1,0 +1,107 @@
+@import "../../utilities/variables/variables.scss";
+
+.slideanim {
+  visibility: visible !important; /* todo: remove when fixed */
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.slideanim {
+  visibility: hidden;
+}
+.slide {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
+
+/* iNaturalist Widget */
+.inat-widget {
+  padding: 10px;
+  line-height: 1;
+  td {
+    padding-bottom: 10px;
+  }
+  .inat-footer {
+    td.inat-value {
+      padding-left: 10px;
+      border-top: none;
+    }
+  }
+}
+.inat-widget-header {
+  margin-bottom: 10px;
+}
+.inat-label {
+  color: #888;
+  font-family: $font-family_2;
+}
+.inat-meta {
+  font-size: smaller;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+.inat-observation-body {
+  padding-left: 10px;
+}
+.inat-user-body {
+  padding-left: 10px;
+}
+.inat-observation-image {
+  text-align: center;
+  width: 48px;
+  display: inline-block;
+  img {
+    max-width: 48px;
+    vertical-align: middle;
+  }
+}
+.inat-user-image {
+  width: 48px;
+  display: inline-block;
+  img {
+    max-width: 48px;
+  }
+}
+.inat-widget-small {
+  .inat-observation-image {
+    margin: 0 3px 3px 0;
+    height: 48px;
+  }
+}
+.inat-value {
+  font-family: $font-family_2;
+}
+.inat-user {
+  font-family: $font-family_2;
+}
+.uncertainty-div {
+  width: 100px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ddd;
+  background-color: #fff3cd;
+}

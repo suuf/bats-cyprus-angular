@@ -1,0 +1,582 @@
+<div *ngIf="initialized">
+  <div class="jumbotron text-center">
+    <h1>{{ "title" | translate }}</h1>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="carousel text-center">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img
+                class="logo"
+                src="../../../../../assets/photos/bats/other/rousette.jpeg"
+                alt="rousette bat"
+                height="300px"
+                style="border-radius: 10px"
+              />
+              <div class="carousel-caption">
+                <p>
+                  <small>
+                    <a
+                      href="https://www.inaturalist.org/observations/146093953"
+                      target="_blank"
+                      >© A. Restu Dwikelana</a
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <h2>{{ "about" | translate }}</h2>
+        <br />
+        <h4 class="text-justify">
+          {{ "welcome_message" | translate }}
+        </h4>
+        <p class="text-justify">
+          {{ "welcome_message_2" | translate }}
+        </p>
+        <br />
+        <p class="text-justify">
+          {{ "welcome_message_3" | translate }}
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">{{ "common_name" | translate }}</th>
+              <th scope="col">{{ "scientific_name" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Anatolian serotine bat</td>
+              <td><i>Eptesicus anatolicus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Serotine bat</td>
+              <td><i>Eptesicus serotinus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Schreiber's bat</td>
+              <td><i>Miniopterus schreibersii </i></td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Lesser mouse-eared bat</td>
+              <td><i>Myotis blythii</i></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">5</th>
+              <td>Long-fingered bat</td>
+              <td><i>Myotis capaccinii</i></td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Lesser mouse-eared bat</td>
+              <td><i>Myotis emarginatus</i></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">7</th>
+              <td>Greater mouse-eared bat</td>
+              <td><i>Myotis myotis </i></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Natterer's bat</td>
+              <td><i>Myotis nattereri</i></td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Greater noctule bat</td>
+              <td><i>Nyctalus lasiopterus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td>Leisler's bat</td>
+              <td><i>Nyctalus leisleri</i></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">11</th>
+              <td>Noctule bat</td>
+              <td><i>Nyctalus noctula</i></td>
+            </tr>
+            <tr>
+              <th scope="row">12</th>
+              <td>Kuhl's pipistrelle</td>
+              <td><i>Pipistrellus kuhli</i></td>
+            </tr>
+            <tr>
+              <th scope="row">13</th>
+              <td>Common pipistrelle</td>
+              <td><i>Pipistrellus pipistrellus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">14</th>
+              <td>Soprano pipistrelle</td>
+              <td><i>Pipistrellus pygmaeus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">15</th>
+              <td>Savi's pipistrelle</td>
+              <td><i>Pipistrellus savii</i></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">16</th>
+              <td>Grey long-eared bat</td>
+              <td><i>Plecotus austriacus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">17</th>
+              <td>Mediterranean long-eared bat</td>
+              <td><i>Plecotus kolombatovici</i></td>
+            </tr>
+            <tr>
+              <th scope="row">18</th>
+              <td>Blasius's horseshoe bat</td>
+              <td><i>Rhinolophus blasii</i></td>
+            </tr>
+            <tr>
+              <th scope="row">19</th>
+              <td>Mediterranean horseshoe bat</td>
+              <td><i>Rhinolophus euryale</i></td>
+            </tr>
+            <tr>
+              <th scope="row">20</th>
+              <td>Greater horseshoe bat</td>
+              <td><i>Rhinolophus ferrumequinum</i></td>
+            </tr>
+            <tr>
+              <th scope="row">21</th>
+              <td>Lesser horsehoe bat</td>
+              <td><i>Rhinolophus hipposideros</i></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">22</th>
+              <td>Mehely's horseshoe bat</td>
+              <td><i>Rhinolophus mehelyi</i></td>
+            </tr>
+            <tr>
+              <th scope="row">23</th>
+              <td>Egyptian fruit bat</td>
+              <td><i>Rousettus aegyptiacus</i></td>
+            </tr>
+            <tr>
+              <th scope="row">24</th>
+              <td>European free-tailed bat</td>
+              <td><i>Tadarida teniotis</i></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex">
+          <div class="uncertainty-div mr-10"></div>
+          = {{ "uncertain" | translate }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Contribute Section) -->
+  <div class="container-fluid bg-grey" id="contribute">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>{{ "contribute" | translate }}</h2>
+        <br />
+
+        <p class="text-justify">
+          {{ "contribute_text_1" | translate }}
+        </p>
+
+        <h3 class="pb-10">{{ "contribute_title_1" | translate }}</h3>
+
+        <h4 class="pt-10">{{ "contribute_subtitle_1" | translate }}</h4>
+
+        <p class="text-justify">
+          {{ "contribute_subttext_1" | translate }}
+        </p>
+
+        <h4 class="pt-10">{{ "contribute_subtitle_2" | translate }}</h4>
+        <p class="text-justify">
+          {{ "contribute_subtext_2" | translate }}
+          <b
+            >{{ "contribute_subtext_2_1" | translate }}
+            <a href="https://forms.gle/1d6gH4a3NJjdQQHB7" target="_blank">{{
+              "contribute_subtext_2_link" | translate
+            }}</a>
+            {{ "contribute_subtext_2_2" | translate }}</b
+          >
+        </p>
+
+        <br />
+
+        <p class="text-justify">
+          <b>
+            {{ "contribute_boldtext" | translate }}
+            <a href="https://www.inaturalist.org/" target="_blank">{{
+              "contribute_boldtext_link1" | translate
+            }}</a
+            >{{ "contribute_boldtext_boldtext2" | translate
+            }}<a [routerLink]="['/', lang, 'home']" fragment="contact">{{
+              "contribute_boldtext_contactus" | translate
+            }}</a>
+            {{ "contribute_boldtext_boldtext3" | translate }}
+          </b>
+        </p>
+
+        <br />
+
+        <figure>
+          <blockquote class="blockquote">
+            <p>{{ "quote" | translate }}</p>
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            {{ "quote_author" | translate }}
+          </figcaption>
+        </figure>
+
+        <br /><br /><br /><a
+          [routerLink]="['/', lang, 'home']"
+          fragment="contact"
+          class="smooth-scroll"
+          ><button class="btn btn-secondary btn-lg">
+            {{ "get_in_touch" | translate }}
+          </button></a
+        >
+      </div>
+      <div class="col-sm-4">
+        <div class="carousel text-center pb-10 slideanim">
+          <div class="carousel-inner">
+            <div class="item active">
+              <img
+                class="logo"
+                src="../../.../../../assets/photos/bats/other/needs_id_rhinolophus_blasii.jpeg"
+                alt="bat found in Cyprus"
+                style="border-radius: 10px"
+              />
+              <div class="carousel-caption">
+                <p>
+                  <small>
+                    <a
+                      href="https://www.inaturalist.org/observations/151428566"
+                      target="_blank"
+                      >© Julien Renoult</a
+                    >
+                  </small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--
+        <p>Find out what others have found in Cyprus!</p>
+        -->
+
+        <!-- todo: add iNaturalist data here -->
+        <!-- <div class="inat-widget">
+          <div class="inat-widget-header">
+            <a href="https://www.inaturalist.org"
+              ><img
+                alt="iNaturalist logo"
+                src="https://www.inaturalist.org/assets/logo-small.gif"
+            /></a>
+          </div>
+          <script
+            type="text/javascript"
+            charset="utf-8"
+            src="https://www.inaturalist.org/observations.widget?layout=large&limit=5&order=desc&order_by=observed_on&place_id=140296&taxon_id=40268"
+          ></script>
+          <table class="table inat-footer">
+            <tr class="inat-user">
+              <td class="inat-value">
+                <strong>
+                  <a
+                    href="https://www.inaturalist.org/observations?place_id=140296&taxon_id=40268"
+                    >View more observations of Bats on
+                    <div class="nobr">iNaturalist »</div></a
+                  >
+                </strong>
+              </td>
+            </tr>
+          </table>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Whatwedo Section) -->
+  <div id="whatwedo" class="container-fluid text-center">
+    <h2>{{ "whatwedo" | translate }}</h2>
+    <h4>
+      {{ "whatwedo_text" | translate }}
+    </h4>
+    <br />
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <i class="bi bi-signpost-split-fill logo-small"></i>
+        <h4>{{ "whatwedo_1_title" | translate }}</h4>
+        <p>{{ "whatwedo_1_description" | translate }}</p>
+      </div>
+
+      <div class="col-sm-4">
+        <i class="bi bi-tree-fill logo-small"></i>
+        <h4>{{ "whatwedo_2_title" | translate }}</h4>
+        <p>{{ "whatwedo_2_description" | translate }}</p>
+      </div>
+
+      <div class="col-sm-4">
+        <i class="bi bi-headphones logo-small"></i>
+        <h4>{{ "whatwedo_3_title" | translate }}</h4>
+        <p>{{ "whatwedo_3_description" | translate }}</p>
+      </div>
+    </div>
+    <br /><br />
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <i class="bi bi-search logo-small"></i>
+        <h4>{{ "whatwedo_4_title" | translate }}</h4>
+        <p>{{ "whatwedo_4_description" | translate }}</p>
+      </div>
+
+      <div class="col-sm-4">
+        <i class="bi bi-funnel-fill logo-small"></i>
+        <h4>{{ "whatwedo_5_title" | translate }}</h4>
+        <p>{{ "whatwedo_5_description" | translate }}</p>
+      </div>
+
+      <div class="col-sm-4">
+        <i class="bi bi-balloon-heart-fill logo-small"></i>
+        <h4>{{ "whatwedo_6_title" | translate }}</h4>
+        <p>{{ "whatwedo_6_description" | translate }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Photos Section) -->
+  <div id="photos" class="container-fluid text-center bg-grey">
+    <h2>{{ "photos" | translate }}</h2>
+    <br />
+    <h4>{{ "activities" | translate }}</h4>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img
+            src="../../.../../../assets/photos/athalassa_2.jpg"
+            alt="Bat walk"
+            width="400"
+            height="300"
+          />
+          <div class="thumbnail-bottom">
+            <p>
+              <strong>{{ "activity_1_title" | translate }}</strong>
+            </p>
+            <p>{{ "activity_1_description" | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img
+            src="../../.../../../assets/photos/bat1_2.jpg"
+            alt="Bat roost surveying"
+            width="400"
+            height="300"
+          />
+          <div class="thumbnail-bottom">
+            <p>
+              <strong>{{ "activity_2_title" | translate }}</strong>
+            </p>
+            <p>{{ "activity_2_description" | translate }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img
+            src="../../.../../../assets/photos/bat_night_1_2.jpg"
+            alt="International Bat Night"
+            width="400"
+            height="300"
+          />
+          <div class="thumbnail-bottom">
+            <p>
+              <strong>{{ "activity_3_title" | translate }}</strong>
+            </p>
+            <p>
+              {{ "activity_3_description" | translate }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <h4>{{ "carousel_title" | translate }}</h4>
+
+    <carousel-component [data]="carouselData"></carousel-component>
+  </div>
+
+  <!-- Container (Find Section) -->
+  <div id="find" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-9">
+        <h2>{{ "findoutmore" | translate }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 slideanim">
+        <i class="bi bi-book-half logo-medium"></i>
+      </div>
+      <div class="col-sm-9">
+        <p>
+          {{ "findoutmore_description" | translate }}
+        </p>
+        <br />
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">{{ "name" | translate }}</th>
+              <th scope="col">{{ "author" | translate }}</th>
+              <th scope="col">{{ "source" | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cool Facts About Bats</td>
+              <td>Nat Geo Kids</td>
+              <td>
+                <a
+                  href="https://www.youtube.com/watch?v=NBCODnTUOrY&t=23s"
+                  target="_blank"
+                  >Video</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The Rarely Seen Nightlife Of Bats & Why They Are Vital For The
+                Earth
+              </td>
+              <td>Our World</td>
+              <td>
+                <a
+                  href="https://www.youtube.com/watch?v=zLNX2pkCepQ"
+                  target="_blank"
+                  >Video</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>The Wild Mammals of Cyprus [in Greek]</td>
+              <td>H. Nicolaou</td>
+              <td>
+                <a
+                  href="https://www.cypruslibraries.ac.cy/record=b1824761*eng"
+                  target="_blank"
+                  >Scientific Book</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>Bats (Mammalia: Chiroptera) of the Eastern Mediterranean</td>
+              <td>P. Benda</td>
+              <td>
+                <a
+                  href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4b4eae2d8cbccf4e1966663be15b845f5179befa"
+                  target="_blank"
+                  >Academic Paper</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                The destruction and conservation of the Egyptian Fruit bat
+                <i>Rousettus aegyptiacus</i> in Cyprus
+              </td>
+              <td>E. Hadjisterkotis</td>
+              <td>
+                <a
+                  href="https://doi.org/10.1007/s10344-006-0041-7"
+                  target="_blank"
+                  >Academic Paper</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                A first assessment of feeding habits in the fruit bat
+                <i>Rousettus aegyptiacus</i> on Cyprus island
+              </td>
+              <td>M.A. del Vaglio et al.</td>
+              <td>
+                <a
+                  href="https://doi.org/10.4404/hystrix-22.2-4587"
+                  target="_blank"
+                  >Academic Paper</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Habitat use and seasonal activity of bats on a large eastern
+                Mediterranean island
+              </td>
+              <td>M. Uhrin et al.</td>
+              <td>
+                <a
+                  href="https://doi.org/10.1080/09397140.2021.1992837"
+                  target="_blank"
+                  >Academic Paper</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>The Protest of the Animals [in Greek]</td>
+              <td>E. Erotokritou</td>
+              <td>
+                <a
+                  href="https://www.cypruslibraries.ac.cy/record=b1287794*eng"
+                  target="_blank"
+                  >Children's Book</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">{{ "contact_title" | translate }}</h2>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>{{ "contact_description" | translate }}</p>
+        <p><i class="bi bi-geo-alt-fill"></i> Cyprus</p>
+        <p>
+          <i class="bi bi-envelope-fill"></i>
+
+          bats-cyprus&#64;protonmail.com
+        </p>
+      </div>
+      <div class="col-sm-7 slideanim">
+        <contact-form-component></contact-form-component>
+      </div>
+    </div>
+  </div>
+</div>

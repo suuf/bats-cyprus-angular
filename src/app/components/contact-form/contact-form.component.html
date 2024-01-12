@@ -1,0 +1,50 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="col-sm-6 form-group mb-2">
+      <input
+        formControlName="name"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="{{ 'contact_name' | translate }}"
+        type="text"
+        required
+      />
+    </div>
+    <div class="col-sm-6 form-group">
+      <input
+        formControlName="subject"
+        class="form-control"
+        id="subject"
+        name="subject"
+        placeholder="{{ 'contact_subject' | translate }}"
+        type="text"
+      />
+    </div>
+  </div>
+  <textarea
+    formControlName="message"
+    class="form-control"
+    id="message"
+    name="message"
+    placeholder="{{ 'contact_message' | translate }}"
+    rows="5"
+  ></textarea
+  ><br />
+  <div class="row">
+    <div class="col-sm-12 form-group d-flex justify-content-md-end">
+      <!--<button class="btn btn-default pull-right"  type="submit">
+    Send
+  </button> -->
+      <a
+        (click)="prepareEmail()"
+        [routerLink]="['/', lang, 'home']"
+        fragment="contact"
+        id="send_email"
+        class="btn btn-secondary justify-content-md-end"
+        target="_top"
+        >{{ "contact_send" | translate }}</a
+      >
+    </div>
+  </div>
+</form>

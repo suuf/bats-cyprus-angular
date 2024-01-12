@@ -1,0 +1,21 @@
+<ng-container *ngIf="data?.length">
+  <ngb-carousel>
+    <ng-container *ngFor="let datum of data">
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img [src]="datum.imageLink" alt="{{ datum.altText }}" />
+        </div>
+        <div class="carousel-caption">
+          <h3>{{ datum.title }}</h3>
+          <p>
+            <small>
+              <a href="{{ datum.sourceLink }}" target="_blank"
+                >© {{ datum.sourceAuthor }}</a
+              >
+            </small>
+          </p>
+        </div>
+      </ng-template>
+    </ng-container>
+  </ngb-carousel>
+</ng-container>

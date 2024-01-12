@@ -1,0 +1,69 @@
+@import "../../utilities/variables/variables.scss";
+
+.carousel-inner .picsum-img-wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  color: $accent_colour;
+}
+
+.carousel-indicators {
+  height: unset;
+  width: unset;
+  .active {
+    width: 30px !important;
+    height: 3px !important;
+  }
+  button {
+    background-color: $colour_2 !important;
+  }
+}
+
+.carousel-control.right {
+  color: $accent_colour;
+}
+.carousel-control.left {
+  color: $accent_colour;
+}
+.carousel-indicators {
+  li {
+    border-color: $accent_colour;
+  }
+  li.active {
+    background-color: $accent_colour;
+  }
+}
+.carousel {
+  a {
+    color: $colour_2;
+    text-decoration: none;
+  }
+}
+
+.carousel-caption h3,
+.carousel-caption a {
+  text-shadow: 1px 1px $colour_1;
+}
+
+.carousel-caption {
+  padding-bottom: 1px;
+  bottom: 0;
+  left: 1%;
+  right: 1%;
+  opacity: 0.9;
+  p {
+    text-align: right;
+    margin-bottom: 1px;
+  }
+  small {
+    font-size: 65%;
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
