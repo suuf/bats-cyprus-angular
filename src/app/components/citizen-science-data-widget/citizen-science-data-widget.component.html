@@ -1,0 +1,73 @@
+<div *ngIf="!citizenScienceData" class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<ng-container *ngIf="citizenScienceData">
+  <div class="inat-widget">
+    <div class="inat-widget-header">
+      <a href="https://www.inaturalist.org"
+        ><img
+          alt="iNaturalist logo"
+          src="https://www.inaturalist.org/assets/logo-small.gif"
+      /></a>
+    </div>
+  </div>
+  <table class="inat-table">
+    <ng-container *ngFor="let datum of citizenScienceData">
+      <tr class="inat-observation">
+        <td class="inat-observation-image">
+          <a href="https://www.inaturalist.org/observations/{{ datum.id }}">
+            <img
+              class="iconic"
+              src="{{
+                datum.photos.length
+                  ? datum.photos[0].url
+                  : 'https://www.inaturalist.org/assets/iconic_taxa/mammalia-75px.png'
+              }}"
+            />
+          </a>
+        </td>
+        <td class="inat-observation-body">
+          <a href="https://www.inaturalist.org/observations/{{ datum.id }}">
+            {{ datum.species_guess }}
+          </a>
+          <div class="inat-meta">
+            <span class="inat-label"> Observer: </span>
+            <span class="inat-value">
+              <a
+                href="https://www.inaturalist.org/observations/{{
+                  datum.user.login
+                }}"
+              >
+                {{ datum.user.name ? datum.user.name : datum.user.login }}</a
+              >
+            </span>
+            <br />
+            <span class="inat-label"> Date: </span
+            ><span class="inat-value">
+              {{ datum.observed_on }}
+              <!-- todo: display differently --></span
+            >
+            <br />
+            <span class="inat-label">Place: </span>
+            <span class="inat-value">{{ datum.place_guess }}</span>
+          </div>
+        </td>
+      </tr>
+    </ng-container>
+  </table>
+
+  <table class="table inat-footer">
+    <tr class="inat-user">
+      <td class="inat-value">
+        <strong>
+          <a
+            href="https://www.inaturalist.org/observations?place_id=140296&taxon_id=40268"
+            >View more observations of Bats on iNaturalist »
+          </a>
+        </strong>
+      </td>
+    </tr>
+  </table>
+</ng-container>

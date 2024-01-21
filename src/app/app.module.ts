@@ -15,6 +15,7 @@ import { CalendarPageComponent } from './pages/calendar-page/calendar-page.compo
 import { TranslatePipe } from './pipes/translate.pipe';
 import { ContactFormModule } from './components/contact-form/contact-form.module';
 import { SharedModule } from './utilities/modules/shared.module';
+import { CitizenScienceDataWidgetComponent } from './components/citizen-science-data-widget/citizen-science-data-widget.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { SharedModule } from './utilities/modules/shared.module';
     SharedModule,
     CarouselComponent, // could move to a HomeComponentModule
     ContactFormModule, // could move to a HomeComponentModule
+    CitizenScienceDataWidgetComponent, // could move to a HomeComponentModule
     RouterModule.forRoot([]),
   ],
   exports: [TranslatePipe],
