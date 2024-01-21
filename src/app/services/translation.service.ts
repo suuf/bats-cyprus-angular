@@ -53,7 +53,7 @@ export class TranslationService {
   }
 
   private loadTranslations(lang: 'gr' | 'en') {
-    const translationUrl = `"../../../assets/translations_${lang}.json`;
+    const translationUrl = `"/assets/translations_${lang}.json`;
     this.getTranslationFile(translationUrl).subscribe((translations) => {
       this.setTranslations(translations);
       this.setInitializedTranslations();
