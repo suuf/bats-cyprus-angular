@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslationService } from '../../services/translation.service';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'header-comp',
@@ -13,7 +13,8 @@ export class HeaderComp implements OnInit {
 
   constructor(
     private translationService: TranslationService,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
@@ -29,12 +30,25 @@ export class HeaderComp implements OnInit {
     this.translationService.changeLanguage();
 
     this.translationService.changeLanguage$.subscribe((language) => {
-      const currentUrl = this.router.url.split('#')[0]; // todo: remove split after fixing scroll
-      const updatedUrl = currentUrl.replace(
-        /^\/[^\/]+/,
-        `/${this.translationService.getLang()}`
-      );
-      window.location.href = location.origin + updatedUrl;
+      const fragment = this.route.snapshot.fragment
+        ? this.route.snapshot.fragment
+        : null;
+
+      if (fragment) {
+        this.router
+          .navigate([this.translationService.getLang(), 'home'], {
+            fragment: fragment,
+          })
+          .then(() => {
+            window.location.reload();
+          });
+      } else {
+        this.router
+          .navigate([this.translationService.getLang(), 'home'])
+          .then(() => {
+            window.location.reload();
+          });
+      }
     });
   }
 }
