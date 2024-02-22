@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ScrollService {
-  private readonly yOffset = -50;
+  private readonly yOffset = -75;
 
   scrollToElement(element: HTMLElement): void {
     if (element) {
