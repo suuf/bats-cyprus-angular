@@ -4,16 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'footer-comp',
   template: `
     <footer class="container-fluid text-center">
-      <a href="#home" title="To Top">
+      <a href="#" title="To Top">
         <i class="bi bi-chevron-up logo-tiny"></i>
       </a>
     </footer>
   `,
 })
-export class FooterComp implements OnInit {
-  name: string = 'User';
-
-  ngOnInit() {
-    // Initialization code here
-  }
-}
+export class FooterComp {}
