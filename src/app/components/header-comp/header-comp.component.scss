@@ -1,5 +1,15 @@
 @import "../../utilities/variables/variables.scss";
 
+// $navbar-toggler-padding-y: var(--bs-navbar-toggler-padding-y) - 0.1rem;
+// $navbar-toggler-padding-x: var(--bs-navbar-toggler-padding-x) - 0.1rem;
+
+$navbar-toggler-padding-y: calc(var(--bs-navbar-toggler-padding-y) - 0.25rem);
+$navbar-toggler-padding-x: calc(var(--bs-navbar-toggler-padding-x) - 0.5rem);
+
+// nav {
+//   --bs-navbar-padding-y: 0;
+// }
+
 .container-fluid {
   padding: 20px 50px;
 }
@@ -25,6 +35,7 @@
   }
   .navbar-brand {
     color: $colour_2 !important;
+    font-size: 1rem;
   }
   .dropdown {
     .dropdown-menu {
@@ -71,8 +82,13 @@
 .navbar-toggler {
   border-color: $colour_2 !important;
   color: $colour_2 !important;
+  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
 }
 
 .dropdown-menu li a {
   padding: 5px 5px;
+}
+
+.mr-1 {
+  margin-right: 1px;
 }

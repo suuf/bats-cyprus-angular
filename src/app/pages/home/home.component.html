@@ -4,9 +4,9 @@
   </div>
 
   <!-- Container (About Section) -->
-  <div id="about" class="container-fluid">
+  <div id="about" class="section-container container-fluid">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="mb-10">
         <div class="carousel text-center">
           <div class="carousel-inner">
             <div class="item active">
@@ -189,9 +189,9 @@
   </div>
 
   <!-- Container (Contribute Section) -->
-  <div class="container-fluid bg-grey" id="contribute">
+  <div class="section-container container-fluid bg-grey" id="contribute">
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-sm-8 mb-10">
         <h2>{{ "contribute" | translate }}</h2>
         <br />
 
@@ -246,7 +246,7 @@
           </figcaption>
         </figure>
 
-        <br /><br /><br /><a
+        <br /><a
           [routerLink]="['/', lang, 'home']"
           fragment="contact"
           class="smooth-scroll"
@@ -288,7 +288,7 @@
   </div>
 
   <!-- Container (Whatwedo Section) -->
-  <div id="whatwedo" class="container-fluid text-center">
+  <div id="whatwedo" class="section-container container-fluid text-center">
     <h2>{{ "whatwedo" | translate }}</h2>
     <h4>
       {{ "whatwedo_text" | translate }}
@@ -336,7 +336,10 @@
   </div>
 
   <!-- Container (Photos Section) -->
-  <div id="photos" class="container-fluid text-center bg-grey">
+  <div
+    id="photos"
+    class="section-container container-fluid text-center bg-grey"
+  >
     <h2>{{ "photos" | translate }}</h2>
     <br />
     <h4>{{ "activities" | translate }}</h4>
@@ -400,7 +403,7 @@
   </div>
 
   <!-- Container (Find Section) -->
-  <div id="find" class="container-fluid">
+  <div id="find" class="section-container container-fluid">
     <div class="row">
       <div class="col-sm-3"></div>
       <div class="col-sm-9">
@@ -533,7 +536,7 @@
   </div>
 
   <!-- Container (Contact Section) -->
-  <div id="contact" class="container-fluid bg-grey">
+  <div id="contact" class="section-container container-fluid bg-grey">
     <h2 class="text-center">{{ "contact_title" | translate }}</h2>
     <div class="row">
       <div class="col-sm-5">
