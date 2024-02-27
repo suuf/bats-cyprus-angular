@@ -16,10 +16,6 @@ import { TranslatePipe } from './pipes/translate.pipe';
 import { ContactFormModule } from './components/contact-form/contact-form.module';
 import { SharedModule } from './utilities/modules/shared.module';
 import { CitizenScienceDataWidgetComponent } from './components/citizen-science-data-widget/citizen-science-data-widget.component';
-import {
-  NgxGoogleAnalyticsModule,
-  NgxGoogleAnalyticsRouterModule,
-} from 'ngx-google-analytics';
 
 @NgModule({
   declarations: [
@@ -41,8 +37,6 @@ import {
     ContactFormModule, // could move to a HomeComponentModule
     CitizenScienceDataWidgetComponent, // could move to a HomeComponentModule
     RouterModule.forRoot([]),
-    NgxGoogleAnalyticsModule.forRoot('G-HK21X052MW'),
-    NgxGoogleAnalyticsRouterModule,
   ],
   exports: [TranslatePipe],
   providers: [],
