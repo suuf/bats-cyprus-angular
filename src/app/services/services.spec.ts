@@ -1,9 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { TranslationService } from './translation.service';
-import {
-  HttpClientTestingModule,
-  provideHttpClientTesting,
-} from '@angular/common/http/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 
 describe('TranslationService', () => {
@@ -11,14 +7,10 @@ describe('TranslationService', () => {
 
   beforeEach((): void => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // <-- providing HttpClient provider to our test suite
+      imports: [HttpClientTestingModule],
     });
     service = TestBed.inject(TranslationService);
-    // service.setInitialLang('en');
   });
-
-  //   beforeEach((): void => {
-  //   });
 
   it('can set language to en and change to gr', () => {
     service.setInitialLang('en');
