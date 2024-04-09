@@ -3,7 +3,7 @@
     <span class="visually-hidden">Loading...</span>
   </div>
 </div>
-<ng-container *ngIf="citizenScienceData">
+<ng-container *ngIf="citizenScienceData && initializedLang">
   <div class="inat-widget">
     <div class="inat-widget-header">
       <a href="https://www.inaturalist.org"
@@ -33,7 +33,9 @@
             {{ datum.species_guess }}
           </a>
           <div class="inat-meta">
-            <span class="inat-label"> Observer: </span>
+            <span class="inat-label">
+              {{ "cit_sci_observer" | translate }}
+            </span>
             <span class="inat-value">
               <a
                 href="https://www.inaturalist.org/observations/{{
@@ -44,13 +46,13 @@
               >
             </span>
             <br />
-            <span class="inat-label"> Date: </span
+            <span class="inat-label"> {{ "cit_sci_date" | translate }} </span
             ><span class="inat-value">
               {{ datum.observed_on }}
               <!-- todo: display differently --></span
             >
             <br />
-            <span class="inat-label">Place: </span>
+            <span class="inat-label">{{ "cit_sci_place" | translate }} </span>
             <span class="inat-value">{{ datum.place_guess }}</span>
           </div>
         </td>
@@ -64,7 +66,7 @@
         <strong>
           <a
             href="https://www.inaturalist.org/observations?place_id=140296&taxon_id=40268"
-            >View more observations of Bats on iNaturalist »
+            >{{ "cit_sci_more" | translate }} »
           </a>
         </strong>
       </td>

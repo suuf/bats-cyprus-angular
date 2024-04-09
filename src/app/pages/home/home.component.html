@@ -280,7 +280,7 @@
           </div>
         </div>
 
-        <p>Find out what others have found in Cyprus!</p>
+        <p>{{ "contribute_findout" | translate }}</p>
 
         <citizen-science-data-widget-component></citizen-science-data-widget-component>
       </div>
@@ -424,108 +424,104 @@
           <thead>
             <tr>
               <th scope="col">{{ "name" | translate }}</th>
-              <th scope="col">{{ "author" | translate }}</th>
-              <th scope="col">{{ "source" | translate }}</th>
+              <th scope="col" class="find-more-head-author">
+                {{ "author" | translate }}
+              </th>
+              <th scope="col" class="find-more-head-source">
+                {{ "source" | translate }}
+              </th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Cool Facts About Bats</td>
-              <td>Nat Geo Kids</td>
+              <td>{{ "findoutmore_name_1" | translate }}</td>
+              <td>{{ "findoutmore_author_1" | translate }}</td>
               <td>
                 <a
                   href="https://www.youtube.com/watch?v=NBCODnTUOrY&t=23s"
                   target="_blank"
-                  >Video</a
+                  >{{ "findoutmore_source_video" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
               <td>
-                The Rarely Seen Nightlife Of Bats & Why They Are Vital For The
-                Earth
+                {{ "findoutmore_name_2" | translate }}
               </td>
-              <td>Our World</td>
+              <td>{{ "findoutmore_author_2" | translate }}</td>
               <td>
                 <a
                   href="https://www.youtube.com/watch?v=zLNX2pkCepQ"
                   target="_blank"
-                  >Video</a
+                  >{{ "findoutmore_source_video" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
-              <td>The Wild Mammals of Cyprus [in Greek]</td>
-              <td>H. Nicolaou</td>
+              <td>{{ "findoutmore_name_3" | translate }}</td>
+              <td>{{ "findoutmore_author_3" | translate }}</td>
               <td>
                 <a
                   href="https://www.cypruslibraries.ac.cy/record=b1824761*eng"
                   target="_blank"
-                  >Scientific Book</a
+                  >{{ "findoutmore_source_scibook" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
-              <td>Bats (Mammalia: Chiroptera) of the Eastern Mediterranean</td>
-              <td>P. Benda</td>
+              <td>{{ "findoutmore_name_4" | translate }}</td>
+              <td>{{ "findoutmore_author_4" | translate }}</td>
               <td>
                 <a
                   href="https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=4b4eae2d8cbccf4e1966663be15b845f5179befa"
                   target="_blank"
-                  >Academic Paper</a
+                  >{{ "findoutmore_source_acpaper" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
-              <td>
-                The destruction and conservation of the Egyptian Fruit bat
-                <i>Rousettus aegyptiacus</i> in Cyprus
-              </td>
-              <td>E. Hadjisterkotis</td>
+              <td [innerHTML]="'findoutmore_name_5' | translate"></td>
+              <td>{{ "findoutmore_author_5" | translate }}</td>
               <td>
                 <a
                   href="https://doi.org/10.1007/s10344-006-0041-7"
                   target="_blank"
-                  >Academic Paper</a
+                  >{{ "findoutmore_source_acpaper" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
-              <td>
-                A first assessment of feeding habits in the fruit bat
-                <i>Rousettus aegyptiacus</i> on Cyprus island
-              </td>
-              <td>M.A. del Vaglio et al.</td>
+              <td [innerHTML]="'findoutmore_name_6' | translate"></td>
+              <td>{{ "findoutmore_author_6" | translate }}</td>
               <td>
                 <a
                   href="https://doi.org/10.4404/hystrix-22.2-4587"
                   target="_blank"
-                  >Academic Paper</a
+                  >{{ "findoutmore_source_acpaper" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
               <td>
-                Habitat use and seasonal activity of bats on a large eastern
-                Mediterranean island
+                {{ "findoutmore_name_7" | translate }}
               </td>
-              <td>M. Uhrin et al.</td>
+              <td>{{ "findoutmore_author_7" | translate }}</td>
               <td>
                 <a
                   href="https://doi.org/10.1080/09397140.2021.1992837"
                   target="_blank"
-                  >Academic Paper</a
+                  >{{ "findoutmore_source_acpaper" | translate }}</a
                 >
               </td>
             </tr>
             <tr>
-              <td>The Protest of the Animals [in Greek]</td>
-              <td>E. Erotokritou</td>
+              <td>{{ "findoutmore_name_8" | translate }}</td>
+              <td>{{ "findoutmore_author_8" | translate }}</td>
               <td>
                 <a
                   href="https://www.cypruslibraries.ac.cy/record=b1287794*eng"
                   target="_blank"
-                  >Children's Book</a
+                  >{{ "findoutmore_source_childbook" | translate }}</a
                 >
               </td>
             </tr>
